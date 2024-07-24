@@ -1,0 +1,159 @@
+/* CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+:root {
+  --bg-primary: #fff;
+  --bg-secondary: #EEEFF1;
+  --bg-brand-primary: #36C5F1;
+  --bg-brand-secondary: #07D09C;
+  --bg-btn-primary: var(--bg-brand-primary);
+  --bg-btn-primary-hover: #202691;
+  --txt-primary: #020204;
+  --txt-secondary: #828990;
+  --txt-inverse: #fff;
+  --txt-link: #0F46BD;
+  --notification-sign: #F5491B;
+  --txt-brand-primary: var(--bg-brand-primary);
+  --border-primary: #ededed;
+  --border-radius-lg: 20px;
+}
+
+/* base style */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  color: var(--txt-primary);
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+}
+h1, h2, h3, h4 {
+  line-height: 1.3;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25;
+}
+.notification {
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid var(--border-primary);
+  background: var(--bg-primary);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem 1.5rem 1rem;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.head h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+.action p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .875rem;
+  color: var(--txt-secondary);
+}
+.action a {
+  text-decoration: none;
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--txt-link);
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding-block: 1rem;
+  gap: 1rem;
+}
+.list-item + .list-item {
+  border-top: 1px solid var(--border-primary);
+}
+.list-item .time {
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--txt-secondary);
+}
+.list-item-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .875rem;
+  padding-inline: .75rem;
+}
+.notification-sign {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: var(--notification-sign);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.notification-icon {
+  background: transparent;
+  padding: .5rem;
+  border-radius: 30px;
+  width: 44px;
+  height: 44px;
+}
+.ni-blue {
+  background: var(--bg-brand-primary);
+}
+.ni-green {
+  background: var(--bg-brand-secondary);
+}
+.text-wrapper p:first-child{
+  font-size: .875rem;
+  font-weight: 500;
+}
+.text-wrapper p:last-child{
+  font-size: .75rem;
+  color: var(--txt-secondary);
+}
